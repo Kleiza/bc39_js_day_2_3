@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Main style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bài tập nộp JS buổi 2 và 3</h1>
+        <br>
+        <!-- Nav tab -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#bt1">Bài 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#bt2">Bài 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#bt3">Bài 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#bt4">Bài 4</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#bt5">Bài 5</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!-- Bài tập 1: Tính lương nhân viên -->
+            <div id="bt1" class="tab-pane container active">
+                <div class="card">
+                    <div class="card-header">
+                        Tính lương nhân viên
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">Lương 1 ngày:</label>
+                            <input id="salaryDaily" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Số ngày làm việc:</label>
+                            <input id="workDay" type="text" class="form-control">
+                        </div>
+                        <button id="btnSalary" class="btn btn-primary">Tính tổng lương</button>
+                    </div>
+                    <div id="salaryTotal" class="card-footer text-muted"></div>
+                </div>
+            </div>
+
+            <!-- Bài tập 2: Tính giá trị trung bình -->
+            <div id="bt2" class="tab-pane container fade">
+                <div class="card">
+                    <div class="card-header">
+                        Tính giá trị trung bình
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">Số thứ 1:</label>
+                            <input id="num1" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Số thứ 2:</label>
+                            <input id="num2" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Số thứ 3:</label>
+                            <input id="num3" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Số thứ 4:</label>
+                            <input id="num4" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Số thứ 5:</label>
+                            <input id="num5" type="text" class="form-control">
+                        </div>
+                        <button id="btnAverage" class="btn btn-primary">Tính tổng lương</button>
+                    </div>
+                    <div id="numAverage" class="card-footer text-muted"></div>
+                </div>
+            </div>
+
+            <!-- Bài tập 3: Quy đổi tiền -->
+            <div id="bt3" class="tab-pane container fade">
+                <div class="card">
+                    <div class="card-header">
+                        Quy đổi tiền
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">Số tiền USD: </label>
+                            <input id="usdTotal" type="text" class="form-control">
+                        </div>
+                        <button id="btnExchange" class="btn btn-primary">Quy đổi</button>
+                    </div>
+                    <div id="vndTotal" class="card-footer text-muted"></div>
+                </div>
+            </div>
+
+            <!-- Bài tập 4: Tính diện tích, chu vi hình chữ nhật -->
+            <div id="bt4" class="tab-pane container fade">
+                <div class="card">
+                    <div class="card-header">
+                        Tính chu vi, diện tích hình chữ nhật
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">Chiều dài: </label>
+                            <input id="hcnDai" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Chiều rộng: </label>
+                            <input id="hcnRong" type="text" class="form-control">
+                        </div>
+                        <button id="btnHCN" class="btn btn-primary">Kết quả</button>
+                    </div>
+                    <div id="hcnKetqua" class="card-footer text-muted"></div>
+                </div>
+            </div>
+
+            <!-- Bài tập 5: Tính tổng 2 ký số -->
+            <div id="bt5" class="tab-pane container fade">
+                <div class="card">
+                    <div class="card-header">
+                        Tính tổng 2 ký số
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">Nhập số bất kỳ có 2 chữ số: </label>
+                            <input id="number" type="text" class="form-control">
+                        </div>
+                        <button id="btnNumber" class="btn btn-primary">Tổng</button>
+                    </div>
+                    <div id="numberTotal" class="card-footer text-muted"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Main JavaScript -->
+    <script src="./main.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
